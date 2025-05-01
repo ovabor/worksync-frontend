@@ -6,7 +6,7 @@ const Benefit = () => {
       <h1 className="text-4xl font-bold text-[#FFFFFF] text-center">
         Benefit of WorkSync on <br /> your service Teams
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
         <div className="border border-[rgb(58,194,130)] p-6 rounded-2xl flex flex-col aspect-square hover:scale-105 transition-transform duration-300 ease-in-out">
           <div className="flex items-center justify-center">
             <svg

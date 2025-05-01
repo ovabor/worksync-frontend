@@ -14,7 +14,7 @@
 }
 
 @layer components {
-  .card {
+  .pricing-card {
     color: var(--foreground);
     border-radius: 20px;
     padding: 24px;
@@ -24,6 +24,37 @@
     background-image: linear-gradient(to right, #033E8C, #3AC282);
     background-size: 100% 2px;
     background-repeat: no-repeat;
+  }
+
+  .solution-card-wrapper {
+    position: relative;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    padding: 1px; 
+    background: linear-gradient(to right, #033E8C, #3AC282);
+    clip-path: polygon(
+      0 0,                    
+      calc(100% - 70px) 0,    
+      100% 70px,              
+      100% 100%,             
+      0 100%                 
+    );
+  }
+  
+  .solution-card {
+    color: var(--foreground);
+    padding: 24px;
+    border-radius: 19px;
+    border-top-right-radius: 0;
+    background-color: #000; 
+    height: 100%;
+    clip-path: polygon(
+      0 0,
+      calc(100% - 70px) 0,
+      100% 70px,
+      100% 100%,
+      0 100%
+    );
   }
 }
 

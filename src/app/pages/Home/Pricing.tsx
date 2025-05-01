@@ -4,6 +4,7 @@ const pricingData = [
     title: "Growth",
     price: "$499",
     basis: "/ per month",
+    isBasis: true,
     btn: "Talk to Sales",
   },
   {
@@ -11,9 +12,16 @@ const pricingData = [
     title: "Scale",
     price: "$1,499",
     basis: "/ per month",
+    isBasis: true,
     btn: "Talk to Sales",
   },
-  { id: 3, title: "Enterprise", price: "Custom", btn: "Contact Sales" },
+  {
+    id: 3,
+    title: "Enterprise",
+    price: "Custom",
+    isBasis: false,
+    btn: "Contact Sales",
+  },
 ];
 
 const Pricing = () => {
@@ -25,11 +33,11 @@ const Pricing = () => {
       <h6 className="font-medium text-xs text-[#FFFFFF] text-center mt-2">
         Predictable plans designed for Mid-Market & Growth companies
       </h6>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 max-w-6xl mx-auto">
-        {pricingData.map(({ title, price, btn, basis, id }) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+        {pricingData.map(({ title, price, btn, isBasis, basis, id }) => (
           <div
             key={id}
-            className="card hover:scale-105 transition-transform duration-300 ease-in-out"
+            className="pricing-card hover:scale-105 transition-transform duration-300 ease-in-out"
           >
             <div className="my-4">
               <svg
@@ -88,7 +96,13 @@ const Pricing = () => {
                 {basis}
               </span>
             </p>
-            <button className="mt-8 mb-4 px-4 py-3 w-full bg-transparent border border-[#FFFFFF] text-[#FFFFFF] text-xs rounded-xl hover:bg-[#FFFFFF] hover:text-[#000000] cursor-pointer transition duration-300 ease-in-out">
+            <button
+              className={`mt-8 mb-4 px-4 py-3 w-full text-[#FFFFFF] text-xs rounded-xl cursor-pointer transition duration-300 ease-in-out ${
+                isBasis
+                  ? "bg-transparent border border-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#000000]"
+                  : "bg-[#033E8C] hover:bg-transparent hover:border hover:border-[#FFFFFF]"
+              }`}
+            >
               {btn}
             </button>
             <hr className="my-4 border border-[#FFFFFF29] w-[80%]" />
