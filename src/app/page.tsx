@@ -5,6 +5,7 @@ import ProfessionalServices from "./pages/Home/ProfessionalServices";
 import TailoredSolution from "./pages/Home/TailoredSolution";
 import Team from "./pages/Home/Team";
 import FAQs from "./pages/Home/FAQs";
+import SimplifyOperations from "./pages/Home/SimplifyOperations";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Pricing />
       <ProfessionalServices />
       <FAQs />
+      <SimplifyOperations />
     </>
   );
 }
