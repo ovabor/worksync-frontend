@@ -12,7 +12,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ backgroundColor }) => {
   return (
     <header
-      className={`flex items-center justify-between px-8 font-poppins fixed w-full z-50 font-alliance ${backgroundColor}`}
+      className={`flex items-center justify-between px-8 fixed w-full z-50 font-alliance ${backgroundColor}`}
     >
       <Link href="/">
         <Image

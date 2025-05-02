@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ScrollAwareNavbar from "./components/ScrollAwareNavbar";
+import Footer from "./components/Footer";
 import { alliance } from "@/app/fonts";
 import "./globals.css";
 
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={`${alliance.variable} antialiased bg-[#121212]`}>
         <ScrollAwareNavbar />
         <main className="font-alliance">{children}</main>
+        <Footer />
       </body>
     </html>
   );
