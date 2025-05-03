@@ -9,9 +9,9 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="container mx-auto pt-16 font-alliance">
+    <footer className="container mx-auto px-4 md:px-10 pt-16 font-alliance">
       <div className="grid grid-cols-10 gap-8">
-        <div className="col-span-10 lg:col-span-4">
+        <div className="col-span-10 md:col-span-5 lg:col-span-4 text-center md:text-left flex flex-col items-center md:items-start">
           <Link href="/">
             <Image
               src="/logo/quickdesk.png"
@@ -57,8 +57,8 @@ const Footer = () => {
             © 2024 WorkSync Technologies, Inc. All rights reserved.
           </p>
         </div>
-        <div className="col-span-10 lg:col-span-6 w-full">
-          <div className="grid grid-cols-4 text-[#FFFFFF] gap-6">
+        <div className="col-span-10 md:col-span-5 lg:col-span-6 w-full">
+          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 text-[#FFFFFF] gap-6 text-center md:text-left">
             <div>
               <h4 className="font-semibold text-sm">Resources</h4>
               <div className="mt-4">

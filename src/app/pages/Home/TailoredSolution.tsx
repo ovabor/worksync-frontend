@@ -158,7 +158,7 @@ const TailoredSolution = () => {
       <h1 className="text-4xl font-bold text-[#FFFFFF] text-center">
         Tailored Solution for <br /> every Team
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-16">
         {tailoredSolution.map(({ id, svg, title, content, link }) => (
           <div className="solution-card-wrapper" key={id}>
             <div className="solution-card">
