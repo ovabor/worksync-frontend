@@ -99,10 +99,10 @@ const services: services[] = [
 const ProfessionalServices = () => {
   return (
     <section className="container mx-auto px-4 py-16 font-alliance">
-      <h1 className="text-4xl font-bold text-[#FFFFFF] text-center">
+      <h1 className="text-3xl md:text-4xl font-bold text-[#FFFFFF] text-center">
         Professional Services
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 md:mt-16">
         {services.map(({ id, svg, title, content }) => (
           <div className="solution-card-wrapper" key={id}>
             <div className="solution-card">

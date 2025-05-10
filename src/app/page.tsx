@@ -6,6 +6,7 @@ import TailoredSolution from "./pages/Home/TailoredSolution";
 import Team from "./pages/Home/Team";
 import FAQs from "./pages/Home/FAQs";
 import SimplifyOperations from "./pages/Home/SimplifyOperations";
+import EnterpriseIntegration from "./pages/Home/EnterpriseIntegration";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Team />
       <Benefit />
       <TailoredSolution />
+      <EnterpriseIntegration />
       <Pricing />
       <ProfessionalServices />
       <FAQs />

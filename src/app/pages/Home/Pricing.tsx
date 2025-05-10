@@ -29,10 +29,10 @@ const pricingData = [
 const Pricing = () => {
   return (
     <section className="container mx-auto px-4 py-16 font-alliance">
-      <h1 className="text-4xl font-bold text-[#FFFFFF] text-left">
-        Simple, Scalable Pricing for <br /> Growing Teams
+      <h1 className="text-3xl md:text-4xl font-bold text-[#FFFFFF] text-center">
+        Simple, Scalable Pricing for Growing Teams
       </h1>
-      <h6 className="font-medium text-xs text-[#FFFFFF] text-left mt-2">
+      <h6 className="font-medium text-xs text-[#FFFFFF] text-center mt-2">
         Predictable plans designed for Mid-Market & Growth companies
       </h6>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
