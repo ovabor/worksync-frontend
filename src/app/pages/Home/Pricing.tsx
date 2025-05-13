@@ -1,3 +1,4 @@
+import TitleText from "@/app/components/TitleText";
 import { BadgeCheck, Minus } from "lucide-react";
 
 const pricingData = [
@@ -14,28 +15,26 @@ const pricingData = [
     title: "Scale",
     price: "$1,499",
     basis: "/ per month",
-    isBasis: true,
+    isBasis: false,
     btn: "Talk to Sales",
   },
   {
     id: 3,
     title: "Enterprise",
     price: "Custom",
-    isBasis: false,
+    isBasis: true,
     btn: "Contact Sales",
   },
 ];
 
 const Pricing = () => {
   return (
-    <section className="container mx-auto px-4 py-16 font-alliance">
-      <h1 className="text-3xl md:text-4xl font-bold text-[#FFFFFF] text-center">
-        Simple, Scalable Pricing for Growing Teams
-      </h1>
+    <section className="container mx-auto px-8 lg:px-16 py-8 lg:py-16 font-alliance">
+      <TitleText title="Simple, Scalable Pricing for Growing Teams" />
       <h6 className="font-medium text-xs text-[#FFFFFF] text-center mt-2">
         Predictable plans designed for Mid-Market & Growth companies
       </h6>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14">
         {pricingData.map(({ title, price, btn, isBasis, basis, id }) => (
           <div
             key={id}
@@ -112,7 +111,7 @@ const Pricing = () => {
         ))}
       </div>
       <div className="mt-16">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Features Column */}
           <div className="space-y-8">
             <h2 className="text-lg font-bold">Features</h2>

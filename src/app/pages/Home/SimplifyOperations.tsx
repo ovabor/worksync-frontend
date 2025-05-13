@@ -1,11 +1,10 @@
 import Button from "@/app/components/Button";
+import TitleText from "@/app/components/TitleText";
 
 const SimplifyOperations = () => {
   return (
     <section className="container mx-auto px-4 py-18 font-alliance flex flex-col items-center justify-center">
-      <h1 className="text-3xl md:text-4xl font-bold text-[#FFFFFF] text-center leading-12">
-        Ready to Simplify Your <br /> Operations?
-      </h1>
+      <TitleText title="Ready to Simplify Your Operations?" />
       <h6 className="font-medium text-xs text-[#FFFFFF] text-center my-2">
         Let&apos;s find the perfect WorkSync plan for your growing business.
       </h6>

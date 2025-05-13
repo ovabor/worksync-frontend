@@ -44,7 +44,7 @@ const FAQs = () => {
   };
 
   return (
-    <section className="container mx-auto px-6 py-16 font-alliance grid grid-cols-10 gap-8">
+    <section className="container mx-auto px-8 lg:px-16 py-8 lg:py-16 font-alliance grid grid-cols-10 gap-8">
       <div className="col-span-10 lg:col-span-4">
         <h2 className="text-3xl md:text-5xl font-bold">
           Frequently asked questions

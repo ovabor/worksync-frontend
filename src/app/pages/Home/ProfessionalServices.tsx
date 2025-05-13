@@ -1,3 +1,5 @@
+import TitleText from "@/app/components/TitleText";
+
 type services = {
   id: number;
   svg: React.ReactNode;
@@ -98,17 +100,17 @@ const services: services[] = [
 
 const ProfessionalServices = () => {
   return (
-    <section className="container mx-auto px-4 py-16 font-alliance">
-      <h1 className="text-3xl md:text-4xl font-bold text-[#FFFFFF] text-center">
-        Professional Services
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 md:mt-16">
+    <section className="container mx-auto px-8 lg:px-16 py-8 lg:py-16 font-alliance">
+      <TitleText title="Professional Services" />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 mt-10 md:mt-14">
         {services.map(({ id, svg, title, content }) => (
           <div className="solution-card-wrapper" key={id}>
             <div className="solution-card">
-              <div className="my-4 px-4">{svg}</div>
-              <h2 className="text-xl font-bold text-[#FFFFFF] mb-2">{title}</h2>
-              <p className="text-[#FFFFFF] mt-4 mb-10 font-normal text-sm w-[85%]">
+              <div className="my-4 lg:px-4">{svg}</div>
+              <h2 className="text-lg lg:text-xl font-bold text-[#FFFFFF] mb-2">
+                {title}
+              </h2>
+              <p className="text-[#FFFFFF] mt-4 mb-10 font-normal text-sm lg:w-[85%]">
                 {content}
               </p>
             </div>

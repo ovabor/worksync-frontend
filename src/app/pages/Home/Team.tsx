@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const Team = () => {
   return (
-    <section className="my-4 md:my-10 px-6 md:px-8 text-center font-alliance">
+    <section className="container my-4 lg:my-10 px-6 lg:px-28 text-center font-alliance">
       <h6 className="text-sm font-semibold text-[#D6D6D680]/50">
         Available Where Your Team Works
       </h6>
-      <div className="grid grid-cols-3 md:grid-cols-5 gap-8 md:gap-16 my-6">
+      <div className="grid grid-cols-5 gap-8 my-6 lg:px-28 items-center justify-items-center">
         <Image
           src="/logo/google.png"
           alt="Google logo"

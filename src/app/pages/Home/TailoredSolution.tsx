@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TitleText from "@/app/components/TitleText";
 
 type tailoredSolution = {
   id: number;
@@ -154,11 +155,9 @@ const tailoredSolution: tailoredSolution[] = [
 
 const TailoredSolution = () => {
   return (
-    <section className="container mx-auto px-4 py-8 md:py-16 font-alliance">
-      <h1 className="text-3xl md:text-4xl font-bold text-[#FFFFFF] text-center">
-        Tailored Solution for <br /> every Team
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 md:mt-16">
+    <section className="container mx-auto px-8 lg:px-16 py-8 lg:py-16 font-alliance">
+      <TitleText title="Tailored Solution for every Team" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4 mt-10 md:mt-14">
         {tailoredSolution.map(({ id, svg, title, content, link }) => (
           <div className="solution-card-wrapper" key={id}>
             <div className="solution-card">
@@ -167,7 +166,7 @@ const TailoredSolution = () => {
               <p className="text-[#FFFFFF] mt-4 mb-10 font-normal text-sm w-[85%]">
                 {content}
               </p>
-              <div className="mt-20 md:mt-32 flex flex-row gap-2 items-end justify-end">
+              <div className="mt-20 md:mt-16 lg:mt-32 flex flex-row gap-2 items-end justify-end">
                 <Link
                   href={link}
                   className="text-[#FFFFFF] text-sm font-bold flex items-center"

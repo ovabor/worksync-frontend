@@ -24,9 +24,9 @@ const Header: React.FC<HeaderProps> = ({ backgroundColor }) => {
           title={isOpen ? "Close menu" : "Open menu"}
         >
           <svg
-            width="30"
-            height="30"
-            viewBox="0 0 30 30"
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >

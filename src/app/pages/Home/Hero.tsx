@@ -4,7 +4,7 @@ import { MobileHeroSVG, LargeHeroSVG } from "@/app/components/ui/SVGs";
 
 const Hero = () => {
   return (
-    <section className="md:container md:mx-auto px-4 pt-16 font-alliance">
+    <section className="container md:mx-auto px-4 pt-16 font-alliance">
       <h1 className="mt-10 text-3xl md:text-5xl font-bold text-[#FFFFFF] text-center leading-tighten">
         Streamline Your Work <br /> Processes with
         <span className="inline-flex items-center md:mt-2">
@@ -27,7 +27,7 @@ const Hero = () => {
         content2="Schedule Demo"
         link2="/demo"
       />
-      <div className="md:hidden flex items-center justify-center">
+      <div className="md:hidden flex items-center justify-center justify-items-center">
         <MobileHeroSVG />
       </div>
       <div className="hidden md:flex mt-10 items-center justify-center">
