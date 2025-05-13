@@ -9,18 +9,19 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="container mx-auto px-4 md:px-10 pt-16 font-alliance">
-      <div className="grid grid-cols-10 gap-8">
-        <div className="col-span-10 md:col-span-5 lg:col-span-4 text-center md:text-left flex flex-col items-center md:items-start">
+    <footer className="container mx-auto px-6 lg:px-16 pt-8 lg:pt-16 font-alliance">
+      <div className="grid grid-cols-10 gap-8 text-left">
+        <div className="col-span-10 md:col-span-5 lg:col-span-4 text-left flex flex-col items-start">
           <Link href="/">
             <Image
-              src="/logo/quickdesk.png"
+              src="/logo/Quick2.png"
               alt="Logo"
+              className="w-40"
               width={100}
               height={100}
             />
           </Link>
-          <p className="font-normal text-[#FAFAFA] text-xs my-4">
+          <p className="font-normal text-[#FAFAFA] text-xs py-4 md:my-2">
             AI-Powered Employee Support Platform
           </p>
           <div>
@@ -53,12 +54,9 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <p className="font-normal text-[#FFFFFF] text-xs mt-20">
-            © 2024 WorkSync Technologies, Inc. All rights reserved.
-          </p>
         </div>
-        <div className="col-span-10 md:col-span-5 lg:col-span-6 w-full">
-          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 text-[#FFFFFF] gap-6 text-center md:text-left">
+        <div className="col-span-10 md:col-span-5 lg:col-span-6 w-full flex items-center">
+          <div className="grid grid-cols-3 lg:grid-cols-4 text-[#FFFFFF] gap-10 md:gap-20 text-left">
             <div>
               <h4 className="font-semibold text-sm">Resources</h4>
               <div className="mt-4">
@@ -121,8 +119,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div>
+        <p className="font-normal text-center md:text-left text-[#FFFFFF] text-xs mt-16 md:mt-10">
+          © 2024 WorkSync Technologies, Inc. All rights reserved.
+        </p>
+      </div>
       <div className="flex items-center justify-center w-full">
-        <h1 className="font-bold text-[#FFFFFF30] text-[17rem]">Worksync</h1>
+        <h1 className="font-bold text-[#FFFFFF30] text-[5rem] md:text-[10rem] lg:text-[16rem]">
+          Worksync
+        </h1>
       </div>
     </footer>
   );

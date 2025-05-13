@@ -44,9 +44,11 @@ const FAQs = () => {
   };
 
   return (
-    <section className="container mx-auto px-4 py-16 font-alliance grid grid-cols-10 gap-8">
+    <section className="container mx-auto px-8 lg:px-16 py-8 lg:py-16 font-alliance grid grid-cols-10 gap-8">
       <div className="col-span-10 lg:col-span-4">
-        <h2 className="text-5xl font-bold">Frequently asked questions</h2>
+        <h2 className="text-3xl md:text-5xl font-bold">
+          Frequently asked questions
+        </h2>
         <Link href="/faqs">
           <button className="py-3 px-6 mt-10 text-sm bg-[#FFFFFF] rounded-full border-2 border-[#FFFFFF] text-[#121212] font-bold cursor-pointer hover:bg-transparent hover:text-[#FFFFFF] transition-colors duration-300">
             View All FAQs
