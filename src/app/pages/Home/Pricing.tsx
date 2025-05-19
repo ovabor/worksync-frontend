@@ -6,7 +6,7 @@ import {
 
 const Pricing = () => {
   return (
-    <section className="container mx-auto px-8 lg:px-16 py-8 lg:py-16 font-alliance">
+    <section className="container mx-auto px-8 lg:px-16 py-8 lg:py-10 font-alliance">
       <TitleText title="Simple, Scalable Pricing for Growing Teams" />
       <h6 className="font-medium text-xs text-[#FFFFFF] text-center mt-2">
         Predictable plans designed for Mid-Market & Growth companies

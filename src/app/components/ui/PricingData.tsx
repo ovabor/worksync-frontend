@@ -511,7 +511,7 @@ const ScalePricing = () => {
     <div className="mt-14">
       <div
         key={pricingData[1].id}
-        className="pricing-card hover:scale-105 transition-transform duration-300 ease-in-out"
+        className="pricing-card pricing-card-2 hover:scale-105 transition-transform duration-300 ease-in-out"
       >
         <div className="my-4">
           <svg

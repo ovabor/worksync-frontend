@@ -33,6 +33,11 @@
     background-position: bottom;
   }
 
+  .pricing-card-2 {
+    border-bottom: none;
+    background-position: bottom;
+  }
+
   .solution-card-wrapper {
     position: relative;
     border-radius: 20px;
