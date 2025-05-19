@@ -12,10 +12,15 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ backgroundColor }) => {
+  const navbarStyle = {
+    backgroundColor: backgroundColor,
+  };
+
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header
-      className={`flex items-center justify-between px-4 py-6 md:px-8 fixed w-full z-50 font-alliance ${backgroundColor}`}
+      className={`flex items-center justify-between px-4 py-6 md:px-8 fixed w-full z-50 font-alliance`}
+      style={navbarStyle}
     >
       <div className="md:hidden">
         <button
