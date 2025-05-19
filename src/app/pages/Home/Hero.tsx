@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Button from "@/app/components/Button";
-// import { MobileHeroSVG, LargeHeroSVG } from "@/app/components/ui/SVGs";
 
 const Hero = () => {
   return (
