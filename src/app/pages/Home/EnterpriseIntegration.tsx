@@ -9,11 +9,11 @@ const EnterpriseIntegration = () => {
         Seamlessly connect with your existing systems.
       </h6>
       <Image
-        className="mx-auto h-auto w-[100%]"
-        src="/images/QuickDesk.png"
+        className="mx-auto h-auto mt-10"
+        src="/images/enterprise.png"
         alt="Integration image"
-        width={300}
-        height={300}
+        width={800}
+        height={800}
       />
     </section>
   );

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "@/app/components/Button";
-import { MobileHeroSVG, LargeHeroSVG } from "@/app/components/ui/SVGs";
+// import { MobileHeroSVG, LargeHeroSVG } from "@/app/components/ui/SVGs";
 
 const Hero = () => {
   return (
@@ -27,11 +27,24 @@ const Hero = () => {
         content2="Schedule Demo"
         link2="/demo"
       />
-      <div className="md:hidden flex items-center justify-center justify-items-center">
-        <MobileHeroSVG />
+      <div className="md:hidden mt-10 flex items-center justify-center justify-items-center">
+        {/* <MobileHeroSVG /> */}
+        <Image
+          src="/images/heroBgMobile.png"
+          alt="hero image"
+          width={300}
+          height={300}
+        />
       </div>
       <div className="hidden md:flex mt-10 items-center justify-center">
-        <LargeHeroSVG />
+        {/* <LargeHeroSVG /> */}
+        <Image
+          className="mx-auto"
+          src="/images/heroBgDesktop.png"
+          alt="hero image"
+          width={1000}
+          height={1000}
+        />
       </div>
     </section>
   );
