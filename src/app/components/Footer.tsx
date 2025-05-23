@@ -125,7 +125,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="flex items-center justify-center w-full">
-        <h1 className="font-bold text-[#FFFFFF30] text-[5rem] md:text-[10rem] lg:text-[16rem]">
+        <h1 className="font-bold text-[#FFFFFF30] text-[4rem] md:text-[10rem] lg:text-[16rem]">
           Worksync
         </h1>
       </div>

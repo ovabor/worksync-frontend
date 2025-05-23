@@ -16,12 +16,12 @@ const Button = ({ content1, link1, content2, link2 }: ButtonProps) => {
       className={`flex items-center justify-center gap-4 md:gap-8 ${inter.className}`}
     >
       <Link href={link1}>
-        <button className="px-4 py-3 md:px-6 mt-8 text-sm bg-[#FFFFFF] rounded-full border-2 border-[#FFFFFF] text-[#121212] font-bold cursor-pointer hover:bg-transparent hover:text-[#FFFFFF] transition-colors duration-300">
+        <button className="px-2 py-3 md:px-6 mt-8 text-sm bg-[#FFFFFF] rounded-full border-2 border-[#FFFFFF] text-[#121212] font-bold cursor-pointer hover:bg-transparent hover:text-[#FFFFFF] transition-colors duration-300">
           {content1}
         </button>
       </Link>
       <Link href={link2}>
-        <button className="flex items-center justify-center px-4 py-3 md:px-6 rounded-full mt-10 text-sm text-[#FFFFFF] font-bold cursor-pointer hover:border hover:border-[#FFFFFF] transition-colors duration-300">
+        <button className="flex items-center justify-center px-2 py-3 md:px-6 rounded-full mt-10 text-sm text-[#FFFFFF] font-bold cursor-pointer hover:border hover:border-[#FFFFFF] transition-colors duration-300">
           <span>{content2}</span>
           <span>
             <svg
