@@ -3,12 +3,21 @@ import Button from "@/app/components/Button";
 
 const Hero = () => {
   return (
-    <section className="container md:mx-auto px-4 pt-16 font-alliance">
-      <h1 className="mt-10 text-3xl md:text-5xl font-bold text-[#FFFFFF] text-center leading-tighten">
+    <section className="container md:mx-auto px-4 font-alliance">
+      <div className="flex items-center justify-center">
+        <Image
+          className="bottom-5 relative z-0"
+          src="/images/Blue.png"
+          alt="lamp effect"
+          width={700}
+          height={700}
+        />
+      </div>
+      <h1 className="text-3xl md:text-5xl font-bold text-[#FFFFFF] text-center leading-tighten">
         Streamline Your Work <br /> Processes with
         <span className="inline-flex items-center md:mt-2">
           <Image
-            className="mx-2"
+            className="mx-2 w-10 md:w-16"
             src="/logo/worksync-hero.png"
             alt="chat icon"
             width={60}
