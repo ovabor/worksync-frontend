@@ -9,6 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ag-ui/mastra": "^0.0.5",
+    "@copilotkit/react-core": "^1.9.3",
+    "@copilotkit/react-ui": "^1.9.3",
+    "@copilotkit/runtime": "^1.9.3",
+    "@mastra/client-js": "^0.10.16",
     "clsx": "^2.1.1",
     "framer-motion": "^12.9.2",
     "lucide-react": "^0.507.0",

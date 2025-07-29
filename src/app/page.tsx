@@ -1,3 +1,4 @@
+import { CopilotSidebar } from "@copilotkit/react-ui"; 
 import Benefit from "./pages/Home/Benefit";
 import Hero from "./pages/Home/Hero";
 import Pricing from "./pages/Home/Pricing";
@@ -20,6 +21,7 @@ export default function Home() {
       <ProfessionalServices />
       <FAQs />
       <SimplifyOperations />
+      <CopilotSidebar />
     </>
   );
 }
