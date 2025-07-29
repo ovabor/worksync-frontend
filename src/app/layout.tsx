@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import ScrollAwareNavbar from "./components/ScrollAwareNavbar";
 import Footer from "./components/Footer";
 import { alliance } from "@/app/fonts";
+import { CopilotKit } from "@copilotkit/react-core";
+import "@copilotkit/react-ui/styles.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -56,7 +58,11 @@ export default function RootLayout({
       </head>
       <body className={`${alliance.variable} antialiased bg-[#121212]`}>
         <ScrollAwareNavbar />
-        <main className="font-alliance">{children}</main>
+        <main className="font-alliance">
+          <CopilotKit runtimeUrl="/api/copilotkit" agent="hrAgent">
+            {children}
+          </CopilotKit>
+        </main>
         <Footer />
       </body>
     </html>
