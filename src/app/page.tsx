@@ -1,3 +1,6 @@
+"use client";
+
+import { useCopilotAction } from "@copilotkit/react-core";
 import { CopilotSidebar } from "@copilotkit/react-ui";
 import Benefit from "./pages/Home/Benefit";
 import Hero from "./pages/Home/Hero";
@@ -8,8 +11,22 @@ import Team from "./pages/Home/Team";
 import FAQs from "./pages/Home/FAQs";
 import SimplifyOperations from "./pages/Home/SimplifyOperations";
 import EnterpriseIntegration from "./pages/Home/EnterpriseIntegration";
+import EmployeeCard from "./components/ui/EmployeeCard";
 
 export default function Home() {
+  useCopilotAction({
+    name: "fetchEmployeeDataTool",
+    description:
+      "Fetches employee data based on an employee's ID, name, or email address.",
+    available: "frontend",
+    parameters: [{ name: "query", type: "string", required: true }],
+    render: ({ args, result, status }) => {
+      return (
+        <EmployeeCard result={result} status={status} query={args.query} />
+      );
+    },
+  });
+
   return (
     <>
       <Hero />
@@ -22,6 +39,7 @@ export default function Home() {
       <FAQs />
       <SimplifyOperations />
       <CopilotSidebar
+        clickOutsideToClose={false}
         instructions={` 
           You are a highly skilled and intelligent HR Manager responsible for overseeing all core Human Resources operations. You utilize a network of specialized sub-agents and tools to ensure effective, secure, and compliant HR service delivery.
 
